@@ -1,0 +1,188 @@
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+nav p {
+    display: flex;
+    color:#009d95;
+}
+.skin {
+    color: #f6bbd3;
+}
+
+nav  ul {
+    color: #009d95;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+}
+
+.idioma {
+    display: flex;
+    margin-left: auto;
+    background-color:#e198b5;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+header {
+    background: 
+    linear-gradient(
+        rgba(255, 255, 255, 0.4), 
+        rgba(0, 0, 0, 0.5)), 
+        url("https://co.nice-cdn.com/upload/image/product/large/default/skin1004-madagascar-centella-toning-toner-400-ml-493527-es.jpg") no-repeat center/cover;
+    background-size: cover;
+}
+
+header p:nth-child(1) {
+    font-weight: 400;
+    letter-spacing: 20px;
+    font-size: 50px;
+    padding-top: 100px;
+    padding-left: 60px;
+    margin: 0px;
+}
+
+header p:nth-child(2) {
+    font-weight: 500;
+    letter-spacing: 5px;
+    padding-left: 90px;
+    padding-top: 0px;
+    padding-bottom: 400px;
+}
+
+header p:nth-child(3) {
+    font-weight: 500;
+    padding-left: 60px;
+    font-size: 10px;
+    color: white;
+
+}
+
+header p:nth-child(4) {
+    font-weight: 500;
+    padding-left: 60px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.para {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #e198b5;
+    border-radius: 1px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+}
+
+.planet {
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    color: white;
+    background-color: #e198b5;
+}
+
+.btn1 {
+    padding: 0 0 0 60px
+}
+  
+header p:nth-of-type(5) {
+    font-size: 20px;
+}
+
+.btn2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2px;
+    padding-left: 40px;
+    height: fit-content;
+}
+
+.btn3 {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    .navbar {
+      /* Option: change layout to vertical or a side menu */
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+    
+    .navbar p {
+      margin-bottom: 10px;
+    }
+    
+    .navbar ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: #f6bbd3;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .navbar ul li {
+      width: 100%;
+      padding: 10px 20px;
+      border-bottom: 1px solid #f6bbd3;
+      margin: 0;
+    }
+    
+    .idioma {
+      align-self: flex-end;
+      margin-top: 10px;
+    }
+}
+  
+  /* ===== Small Screens (<480px) ===== */
+@media screen and (max-width: 479px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+    
+    .navbar p {
+      margin-bottom: 10px;
+    }
+    
+    /* Hide the ul menu by default */
+    .navbar ul {
+      display: none;
+    }
+    
+    .idioma {
+      align-self: flex-end;
+      margin-top: 10px;
+    }
+
+}
+  
